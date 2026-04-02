@@ -31,7 +31,7 @@ def generate_launch_description():
         get_package_share_directory('turtlebot3_description'),
         'urdf', 'turtlebot3_burger.urdf.xacro',
     )
-    robot_desc = Command(['xacro', urdf_file])
+    robot_desc = Command(['xacro ', urdf_file])
 
     robot_state_pub = Node(
         package='robot_state_publisher',
